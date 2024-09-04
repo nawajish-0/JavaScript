@@ -42,3 +42,26 @@ myFunction();
 //  NOTE: This step is replaced in section B.3.6.3.
 //  If val has a [[Call]] internal slot, return "function"
 //  Return "object".
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+// stack(primitive) copy create krta hai | heap(non-primitive) reference leta hai
+
+let name1 = "level";
+let name2 = name1;
+console.log(name1);  // level
+console.log(name2);  // level
+
+
+let user1 = {
+    name: "level",
+    age: 2
+}
+let user2 = user1;
+
+user2.name = "jack";
+
+console.log(user1); // 
+console.log(user2);
