@@ -55,3 +55,31 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));  // will make array of key,value together
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+//object de-structure
+
+const course = {
+    coursename:"js course",
+    price:"free",
+    courseInstructor:"level"
+}
+
+course.courseInstructor //normal method
+
+const {courseInstructor:teacher} = course
+
+console.log(teacher);
+
+
+// {
+//     "name": "level",
+//     "coursename": "js",
+//     "price": "free"
+// }
+
+//json in array format
+[
+    {},
+    {},
+    {}
+]
