@@ -8,18 +8,21 @@ if (userEmail) {
 
 // falsy values
 
-// false, 0, -0, BigInt 0n, "", null, undefined, NaN
+// false, 0, -0, BigInt(0n), "", null, undefined, NaN
 
 //truthy values
 // "0", 'false', " ", [], {}, function(){}
 
-// if (userEmail.length === 0) {
-//     console.log("Array is empty");
-// }
 
+// to check if array is empty or not
+if (userEmail.length === 0) {
+    console.log("Array is empty");
+}
+
+// to check object is empty or not 
 const emptyObj = {}
 
-if (Object.keys(emptyObj).length === 0) {
+if (Object.keys(emptyObj).length === 0) {    // Object.keys(obj)-> return an array
     console.log("Object is empty");
 }
 
