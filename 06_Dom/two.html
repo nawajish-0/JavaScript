@@ -1,0 +1,37 @@
+<!-- Parent child concept  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM | jack</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">   <!-- no. of nodes = 1 -->
+        <!-- this is a comment -->  <!-- no. of nodes = 3 (inlcuding next line)-->
+        <div class="day">Monday</div> <!-- no. of nodes = 5 -->
+        <div class="day">Tuesday</div> <!-- no. of nodes = 7 -->
+        <div class="day">Wednesday</div> <!-- no. of nodes = 9 -->
+        <div class="day">Thursday</div> <!-- no. of nodes = 11 -->
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //      console.log(parent.children[i].innerHTML);
+        
+    // }
+    parent.children[1].style.color = "orange"
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+
+    console.log("NODES: ", parent.childNodes); // all nodes including next line, it also counts a comment as a node.
+</script>
+</html>
