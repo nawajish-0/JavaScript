@@ -1,0 +1,116 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #212121;
+}
+
+h1 {
+    background-color: #161616;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
+
+#wrapper {
+    box-sizing: border-box;
+    text-align: center;
+    width: 450px;
+    height: auto;
+    background-color: #474747;
+    color: #fff;
+    font-size: 25px;
+    margin: 50px auto;
+    padding-bottom: 20px;
+}
+
+#guessField {
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+    border: 5px solid #6c6d6d;
+    text-align: center;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+button, #subt {
+    background-color: #141414;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 30px;
+    border: none;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition for smooth effect */
+}
+
+button:hover, #subt:hover {
+    background-color: #474747; /* Change color on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+#subt {
+    background-color: #161616;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.resultParas p {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.lastResult, .guesses {
+    color: white;
+    padding: 7px;
+    margin: 10px 0;
+}
+
+#guess {
+    font-size: 55px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.guesses {
+    background-color: #7a7a7a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.lowOrHi {
+    color: #fff;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+}
+
+#newGame {
+    font-size: 20px;
+    color: #fff;
+    background-color: #161616;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#newGame:hover {
+    background-color: #474747;
+    transform: scale(1.05);
+}
